@@ -44,7 +44,7 @@ console.log("hello")
 /*** CHALLENGE 3 ***/
 
 function personFromPersonStore(name, age) {
-	const person = Object.create(personStore);
+  const person = Object.create(personStore);
   person.name = name;
   person.age = age;
   return person;
@@ -95,14 +95,13 @@ const simon = new PersonConstructor;
 /*** CHALLENGE 6 ***/
 
 function personFromConstructor(name, age) {
-	this.name = name;
-  this.age = age;
-  this.greet = ()=>{console.log('hello')}
-
-
+  const person = new PersonContructor;
+  person.name = name;
+  person.age = age;
+  return person;
 }
 
-const mike = new personFromConstructor('Mike', 30);
+const mike = personFromConstructor('Mike', 30);
 
 
 // /********* Uncomment these lines to test your work! *********/
@@ -126,14 +125,10 @@ personFromConstructor.prototype.introduce = function () {console.log(`Hi, my nam
 /*** CHALLENGE 8 ***/
 
 class PersonClass {
-	constructor() {
-    // add code here
-
-
+   constructor(name) {
+    	this.name = name;
 	}
-
 	greet = function () {console.log('hello')}
-
 }
 
 
