@@ -24,3 +24,10 @@ console.log(myDog.age); // Output: 5
 console.log(myDog.breed); // Output: Labrador
 
 ```
+- - - - 
+
+![image](https://github.com/saidali-ibn-zafar/The-Hard-Parts-of-Object-Oriented-JavaScript/assets/120341849/f868f25b-6786-4c0e-bec4-d4244b8f49e0)
+
+
+Here `super()` is kind of: 
+- this = UserCreator("Alisa" , 8);
